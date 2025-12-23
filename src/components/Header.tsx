@@ -21,6 +21,7 @@ const Header = () => {
     { label: "服务介绍", href: "#services" },
     { label: "产品优惠", href: "#products" },
     { label: "合作品牌", href: "#partners" },
+    { label: "客户案例", href: "#clients" },
     { label: "关于我们", href: "#about" },
   ];
 
