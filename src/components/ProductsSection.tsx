@@ -17,25 +17,39 @@ const ProductsSection = () => {
           image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop"
         },
         { 
-          name: "黄油巴斯克拿铁", 
-          price: 18.5, 
-          original: 38, 
-          brand: "Mstand",
+          name: "太妃榛果拿铁 中杯", 
+          price: 24.68, 
+          original: 35, 
+          brand: "星巴克",
           image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&h=300&fit=crop"
         },
         { 
-          name: "环游世界(1磅)", 
-          price: 188, 
+          name: "咸芝士拿铁", 
+          price: 19.29, 
+          original: 40, 
+          brand: "Mstand",
+          image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop"
+        },
+        { 
+          name: "星语心愿", 
+          price: 197, 
           original: 258, 
           brand: "诺心蛋糕",
           image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop"
         },
         { 
-          name: "深爱(1磅)", 
-          price: 168, 
-          original: 208, 
+          name: "深爱（2磅）", 
+          price: 304, 
+          original: 398, 
           brand: "21cake",
           image: "https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400&h=300&fit=crop"
+        },
+        { 
+          name: "布莱克", 
+          price: 304, 
+          original: 398, 
+          brand: "21cake",
+          image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=400&h=300&fit=crop"
         },
       ],
     },
@@ -237,7 +251,7 @@ const ProductsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section header */}
         <div className="text-center max-w-4xl mx-auto mb-20">
-          <span className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-brand-gold/10 to-primary/10 border border-brand-gold/20 text-brand-gold text-sm font-semibold mb-6 tracking-wide">
+          <span className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-primary/10 to-brand-gold-light/10 border border-primary/20 text-primary text-sm font-semibold mb-6 tracking-wide">
             超值优惠
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-8 leading-tight">
@@ -265,11 +279,11 @@ const ProductsSection = () => {
 
           {categories.map((cat) => (
             <TabsContent key={cat.id} value={cat.id} className="mt-0">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {cat.products.map((product, idx) => (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                {cat.products.map((product) => (
                   <div
                     key={product.name}
-                    className="group bg-card rounded-3xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 border border-border/50 hover:border-brand-gold/30 hover:-translate-y-2"
+                    className="group bg-card rounded-3xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 border border-border/50 hover:border-primary/30 hover:-translate-y-2"
                   >
                     {/* Product image */}
                     <div className="relative aspect-[4/3] overflow-hidden">
@@ -278,10 +292,10 @@ const ProductsSection = () => {
                         alt={product.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
                       
                       {/* Brand badge */}
-                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm text-white text-xs font-medium">
+                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-foreground/40 backdrop-blur-sm text-card text-xs font-medium">
                         {product.brand}
                       </span>
                       
@@ -297,7 +311,7 @@ const ProductsSection = () => {
                     {/* Product info */}
                     <div className="p-6">
                       {/* Product name */}
-                      <h3 className="text-lg font-bold text-foreground mb-4 line-clamp-2 group-hover:text-brand-gold transition-colors min-h-[56px]">
+                      <h3 className="text-lg font-bold text-foreground mb-4 line-clamp-2 group-hover:text-primary transition-colors min-h-[56px]">
                         {product.name}
                       </h3>
 
@@ -311,7 +325,7 @@ const ProductsSection = () => {
                                 {product.unit && <span className="text-sm font-normal text-muted-foreground">{product.unit}</span>}
                               </>
                             ) : (
-                              <span className="text-brand-gold">{product.price}</span>
+                              <span className="text-primary">{product.price}</span>
                             )}
                           </span>
                         </div>

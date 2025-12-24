@@ -12,9 +12,9 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Coffee,
-      title: "餐饮美食",
-      description: "星巴克、肯德基、麦当劳等知名品牌，低至5折优惠",
-      brands: ["星巴克", "肯德基", "麦当劳", "Mstand", "诺心蛋糕", "21cake"],
+      title: "咖啡甜点",
+      description: "星巴克、Mstand、诺心蛋糕、21cake等知名品牌，低至5折优惠",
+      brands: ["星巴克馥芮白", "太妃榛果拿铁", "Mstand咸芝士拿铁", "诺心蛋糕", "21cake布莱克", "21cake深爱"],
       color: "from-amber-500 to-orange-500",
     },
     {
@@ -22,14 +22,14 @@ const ServicesSection = () => {
       title: "出行贵宾",
       description: "机场、高铁贵宾厅及快速通道，尊享出行体验",
       brands: ["机场贵宾厅", "高铁贵宾厅", "机场快速通道"],
-      color: "from-blue-500 to-cyan-500",
+      color: "from-primary to-brand-gold-dark",
     },
     {
       icon: Home,
       title: "生活服务",
       description: "家政保洁、洗衣洗护、家电清洗，品质生活无忧",
       brands: ["京东家政", "轻喜到家", "京东洗衣"],
-      color: "from-green-500 to-emerald-500",
+      color: "from-emerald-500 to-teal-500",
     },
     {
       icon: Heart,
@@ -79,7 +79,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 border border-border hover:border-brand-gold/30 overflow-hidden"
+              className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 border border-border hover:border-primary/30 overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Gradient accent */}
@@ -87,11 +87,11 @@ const ServicesSection = () => {
 
               {/* Icon */}
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className="w-7 h-7 text-white" />
+                <service.icon className="w-7 h-7 text-primary-foreground" />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-brand-gold transition-colors">
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">

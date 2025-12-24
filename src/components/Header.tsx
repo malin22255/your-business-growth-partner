@@ -22,6 +22,7 @@ const Header = () => {
     { label: "产品优惠", href: "#products" },
     { label: "合作品牌", href: "#partners" },
     { label: "客户案例", href: "#clients" },
+    { label: "合作方式", href: "#cooperation" },
     { label: "关于我们", href: "#about" },
   ];
 
@@ -38,15 +39,15 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#hero" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-gold to-amber-500 flex items-center justify-center shadow-glow">
-                <span className="text-brand-navy font-bold text-lg">城</span>
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-brand-gold-dark flex items-center justify-center shadow-glow">
+                <span className="text-primary-foreground font-bold text-lg">城</span>
               </div>
               <div className="flex flex-col">
-                <span className={`font-bold text-lg tracking-tight ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
+                <span className={`font-bold text-lg tracking-tight ${isScrolled ? "text-foreground" : "text-brand-dark"}`}>
                   城星卡
                 </span>
-                <span className={`text-xs ${isScrolled ? "text-muted-foreground" : "text-primary-foreground/70"}`}>
-                  企业权益服务专家
+                <span className={`text-xs ${isScrolled ? "text-muted-foreground" : "text-brand-brown/70"}`}>
+                  企业会员权益中台
                 </span>
               </div>
             </a>
@@ -57,8 +58,8 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-brand-gold ${
-                    isScrolled ? "text-foreground" : "text-primary-foreground"
+                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                    isScrolled ? "text-foreground" : "text-brand-dark"
                   }`}
                 >
                   {item.label}
