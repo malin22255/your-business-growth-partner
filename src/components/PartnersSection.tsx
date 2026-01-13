@@ -1,58 +1,58 @@
-
-
 const PartnersSection = () => {
   const brandCategories = [
     {
       category: "咖啡茶饮",
       brands: [
-        { name: "星巴克", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/200px-Starbucks_Corporation_Logo_2011.svg.png" },
-        { name: "Mstand", logo: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=100&h=100&fit=crop" },
+        { name: "星巴克", logo: "https://logo.clearbit.com/starbucks.com" },
+        { name: "Mstand", logo: "https://logo.clearbit.com/mstand.com" },
+        { name: "瑞幸咖啡", logo: "https://logo.clearbit.com/luckincoffee.com" },
       ]
     },
     {
       category: "蛋糕甜点",
       brands: [
-        { name: "诺心蛋糕", logo: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&h=100&fit=crop" },
-        { name: "21cake", logo: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=100&h=100&fit=crop" },
+        { name: "诺心蛋糕", logo: "https://lecake.com/favicon.ico" },
+        { name: "21cake", logo: "https://www.21cake.com/favicon.ico" },
       ]
     },
     {
       category: "快餐美食",
       brands: [
-        { name: "肯德基", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/KFC_logo.svg/200px-KFC_logo.svg.png" },
-        { name: "麦当劳", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/200px-McDonald%27s_Golden_Arches.svg.png" },
+        { name: "肯德基", logo: "https://logo.clearbit.com/kfc.com" },
+        { name: "麦当劳", logo: "https://logo.clearbit.com/mcdonalds.com" },
+        { name: "必胜客", logo: "https://logo.clearbit.com/pizzahut.com" },
       ]
     },
     {
       category: "家政服务",
       brands: [
-        { name: "京东家政", logo: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" },
-        { name: "轻喜到家", logo: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=100&h=100&fit=crop" },
+        { name: "京东到家", logo: "https://logo.clearbit.com/jd.com" },
+        { name: "轻喜到家", logo: "https://logo.clearbit.com/qingxidaojia.com" },
       ]
     },
     {
       category: "健康医疗",
       brands: [
-        { name: "爱康国宾", logo: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=100&h=100&fit=crop" },
-        { name: "瑞尔齿科", logo: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=100&h=100&fit=crop" },
+        { name: "爱康国宾", logo: "https://logo.clearbit.com/ikang.com" },
+        { name: "瑞尔齿科", logo: "https://logo.clearbit.com/arrail-dental.com" },
       ]
     },
     {
       category: "视频娱乐",
       brands: [
-        { name: "爱奇艺", logo: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&h=100&fit=crop" },
-        { name: "优酷", logo: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=100&h=100&fit=crop" },
-        { name: "腾讯视频", logo: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=100&h=100&fit=crop" },
-        { name: "芒果TV", logo: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=100&h=100&fit=crop" },
-        { name: "B站", logo: "https://images.unsplash.com/photo-1611162617263-4ec3060a058e?w=100&h=100&fit=crop" },
+        { name: "爱奇艺", logo: "https://logo.clearbit.com/iqiyi.com" },
+        { name: "优酷", logo: "https://logo.clearbit.com/youku.com" },
+        { name: "腾讯视频", logo: "https://logo.clearbit.com/v.qq.com" },
+        { name: "芒果TV", logo: "https://logo.clearbit.com/mgtv.com" },
+        { name: "bilibili", logo: "https://logo.clearbit.com/bilibili.com" },
       ]
     },
     {
       category: "办公工具",
       brands: [
-        { name: "网易云音乐", logo: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=100&h=100&fit=crop" },
-        { name: "WPS", logo: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=100&h=100&fit=crop" },
-        { name: "百度网盘", logo: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=100&h=100&fit=crop" },
+        { name: "网易云音乐", logo: "https://logo.clearbit.com/music.163.com" },
+        { name: "WPS", logo: "https://logo.clearbit.com/wps.com" },
+        { name: "百度网盘", logo: "https://logo.clearbit.com/pan.baidu.com" },
       ]
     },
   ];
@@ -95,15 +95,15 @@ const PartnersSection = () => {
                   className="flex-shrink-0 group"
                 >
                   <div className="w-32 h-32 rounded-2xl bg-card border border-border/50 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-center gap-3 hover:scale-110 hover:border-brand-gold/30 backdrop-blur-sm">
-                    <div className="w-14 h-14 rounded-xl overflow-hidden bg-secondary/50 flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-xl overflow-hidden bg-white flex items-center justify-center p-2">
                       <img 
                         src={brand.logo} 
                         alt={brand.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
-                          target.parentElement!.innerHTML = `<span class="text-2xl font-bold text-primary">${brand.name.charAt(0)}</span>`;
+                          target.parentElement!.innerHTML = `<span class="text-xl font-bold text-primary">${brand.name.slice(0, 2)}</span>`;
                         }}
                       />
                     </div>
@@ -119,7 +119,7 @@ const PartnersSection = () => {
 
         {/* Brand categories grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {brandCategories.slice(0, 4).map((cat, index) => (
+          {brandCategories.slice(0, 4).map((cat) => (
             <div
               key={cat.category}
               className="group relative bg-card rounded-3xl p-8 border border-border/50 shadow-card hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2"
@@ -135,14 +135,15 @@ const PartnersSection = () => {
                       key={brand.name}
                       className="flex items-center gap-2 px-4 py-2 rounded-xl bg-secondary/50 hover:bg-primary/10 transition-colors"
                     >
-                      <div className="w-6 h-6 rounded-md overflow-hidden bg-background/50">
+                      <div className="w-6 h-6 rounded-md overflow-hidden bg-white flex items-center justify-center">
                         <img 
                           src={brand.logo} 
                           alt={brand.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
                             target.style.display = 'none';
+                            target.parentElement!.innerHTML = `<span class="text-xs font-bold text-primary">${brand.name.charAt(0)}</span>`;
                           }}
                         />
                       </div>
