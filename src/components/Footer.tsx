@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-brand-navy text-primary-foreground py-16">
+      <footer className="bg-secondary text-foreground py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
@@ -19,10 +19,10 @@ const Footer = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">城星卡</h3>
-                  <p className="text-primary-foreground/60 text-sm">企业权益服务专家</p>
+                  <p className="text-muted-foreground text-sm">企业权益服务专家</p>
                 </div>
               </div>
-              <p className="text-primary-foreground/70 leading-relaxed max-w-md">
+              <p className="text-muted-foreground leading-relaxed max-w-md">
                 杭州城际网信息科技有限公司旗下核心产品，专注为企业提供一站式权益服务解决方案，
                 助力企业拉新促活，赋能政企提升流水。
               </p>
@@ -36,7 +36,7 @@ const Footer = () => {
                   <li key={item}>
                     <a
                       href={`#${item === "首页" ? "hero" : item === "服务介绍" ? "services" : item === "产品优惠" ? "products" : item === "合作品牌" ? "partners" : "about"}`}
-                      className="text-primary-foreground/70 hover:text-brand-gold transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {item}
                     </a>
@@ -51,15 +51,15 @@ const Footer = () => {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-brand-gold shrink-0 mt-0.5" />
-                  <span className="text-primary-foreground/70">浙江省杭州市</span>
+                  <span className="text-muted-foreground">浙江省杭州市</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-brand-gold shrink-0" />
-                  <span className="text-primary-foreground/70">400-XXX-XXXX</span>
+                  <span className="text-muted-foreground">400-XXX-XXXX</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-brand-gold shrink-0" />
-                  <span className="text-primary-foreground/70">business@chengxingcard.com</span>
+                  <span className="text-muted-foreground">business@chengxingcard.com</span>
                 </li>
               </ul>
               <Button 
@@ -73,18 +73,18 @@ const Footer = () => {
           </div>
 
           {/* Bottom bar */}
-          <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/50 text-sm">
+          <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted-foreground text-sm">
               © {new Date().getFullYear()} 杭州城际网信息科技有限公司 版权所有
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-primary-foreground/50 hover:text-brand-gold transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 隐私政策
               </a>
-              <a href="#" className="text-primary-foreground/50 hover:text-brand-gold transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 服务条款
               </a>
-              <a href="#" className="text-primary-foreground/50 hover:text-brand-gold transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 浙ICP备XXXXXXXX号
               </a>
             </div>
